@@ -4,7 +4,7 @@
   "version": "1.0.0",
   "type": "module",
   "scripts": {
-    "check": "node scripts/check.mjs && node scripts/verify-tisa.mjs",
+    "check": "node scripts/check.mjs && node scripts/verify-tisa.mjs && node scripts/verify-city-history.mjs",
     "deploy": "wrangler deploy",
     "preview": "wrangler preview"
   },

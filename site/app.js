@@ -207,11 +207,16 @@ function showEvidence(d,y,k=state.metric){
 }
 function renderLedger(){
  const l=data.ledger.find(x=>x.year===state.ledger);$('#ledger-year').value=state.ledger;
- const money=n=>n==null?'—':`$${fmt(n)}`;
- const items=[['MAINTENANCE OF EFFORT',l.operating,l.year===2015?'No MOE amount listed':'Baseline operating support'],['SETTLEMENT / OPEB',l.settlement,l.settlement==null?'Not established for this period':'Municipal schools settlement'],['CAPITAL SUPPORT',l.capital,l.capitalDescription],['STARTUP SUPPORT',l.startup,l.year===2015?'FY15 startup footnote':l.startup==null?'Not established for this period':'No startup amount listed']];
- $('#ledger-equation').innerHTML=items.map(([label,value,note])=>`<div class="ledger-box"><span class="label">${label}</span><strong>${money(value)}</strong><small>${esc(note)}</small></div>`).join('')+`<div class="ledger-box total"><span class="label">${l.year===2027?'OPERATING + CAPITAL BUDGET':'INCLUDED SUPPORT SUBTOTAL'}</span><strong>${money(l.subtotal)}</strong><small>${fy(l.year)} · ${esc(l.basis)}</small></div>`;
+ const money=n=>n==null?'—':`$${fmt(n,Number.isInteger(n)?0:2)}`;
+ const listed=key=>l.unlistedComponents?.includes(key)?null:l[key];
+ const items=[['MAINTENANCE OF EFFORT',listed('operating'),l.year===2015?'Zero listed in the MOE column':'Baseline operating support'],['SETTLEMENT / OPEB',listed('settlement'),listed('settlement')==null?'No amount established in this source':'Municipal schools settlement'],['CAPITAL SUPPORT',listed('capital'),l.capitalDescription],['STARTUP SUPPORT',l.startup,l.year===2015?'FY15 startup footnote':l.startup==null?'Not established for this period':'No startup amount listed']];
+ if(l.reportedTotal!=null)items.push(['MIXED-DRINK TAX',listed('mixedDrinkTax'),'Reported tax distributions'],['MISCELLANEOUS SUPPORT',listed('miscellaneous'),l.miscItems?.length?'Services, contributions and other listed support':'No amount listed']);
+ const total=l.reportedTotal??l.subtotal;
+ $('#ledger-equation').innerHTML=items.map(([label,value,note])=>`<div class="ledger-box"><span class="label">${label}</span><strong>${money(value)}</strong><small>${esc(note)}</small></div>`).join('')+`<div class="ledger-box total"><span class="label">${l.year===2027?'OPERATING + CAPITAL BUDGET':l.reportedTotal!=null?'TOTAL REPORTED SUPPORT':'SUPPORT NOT ESTABLISHED'}</span><strong>${money(total)}</strong><small>${fy(l.year)} · ${esc(l.basis)}${l.reportedTotal!=null?` · Includes direct and indirect support. Subtotal excluding tax and miscellaneous: ${money(l.subtotal)}.`:''}</small></div>`;
  $('#ledger-note').textContent=l.note;
- $('#city-support-total').textContent=`FY2015–FY2026 included support: ${money(data.citySupportTotal)}. Calculated from the annual components, excluding mixed drink tax and miscellaneous items.`;
+ const details=$('#ledger-details');details.hidden=!l.miscItems?.length;
+ details.innerHTML=l.miscItems?.length?`<details><summary>See the ${fy(l.year)} miscellaneous support breakdown</summary><div class="evidence-table-wrap"><table class="evidence-table"><thead><tr><th scope="col">Item</th><th scope="col">Reported amount</th></tr></thead><tbody>${l.miscItems.map(item=>`<tr><td>${esc(item.description)}</td><td>${money(item.amount)}</td></tr>`).join('')}</tbody></table></div></details>`:'';
+ $('#city-support-total').textContent=`FY2015–FY2026 total reported support: ${money(data.cityReportedSupportTotal)}. Excluding mixed-drink tax and miscellaneous support: ${money(data.citySupportTotal)}.`;
 }
 function exportCsv(history=false){
  const ds=visibleDistricts().filter(d=>history||!d.historical||state.year===2013||state.baseline===2013),years=history?trendYears():[state.year];
@@ -227,7 +232,7 @@ function exportCsv(history=false){
 function toast(text){$('#toast').textContent=text;$('#toast').classList.add('show');setTimeout(()=>$('#toast').classList.remove('show'),3000);}
 async function init(){
  try{
-  const r=await fetch('data.json');if(!r.ok)throw new Error('Research data could not be loaded.');data=await r.json();records=new Map(data.records.map(r=>[`${r.district}-${r.year}`,r]));selected=new Set(currentDistricts().map(d=>d.id));
+  const r=await fetch('data.json?v=history-20261022');if(!r.ok)throw new Error('Research data could not be loaded.');data=await r.json();records=new Map(data.records.map(r=>[`${r.district}-${r.year}`,r]));selected=new Set(currentDistricts().map(d=>d.id));
   const q=new URLSearchParams(location.search);if(META[q.get('metric')])state.metric=q.get('metric');
   if(data.years.includes(Number(q.get('year'))))state.year=Number(q.get('year'));
   if(data.years.includes(Number(q.get('base'))))state.baseline=Number(q.get('base'));
@@ -251,7 +256,7 @@ async function init(){
   $('#close-dialog').addEventListener('click',()=>$('#evidence').close());$('#evidence').addEventListener('close',()=>lastFocus?.focus());
   $('#evidence').addEventListener('click',e=>{if(e.target===$('#evidence')){const r=e.target.getBoundingClientRect();if(e.clientX<r.left||e.clientX>r.right||e.clientY<r.top||e.clientY>r.bottom)e.target.close();}});
   $('#ledger-year').addEventListener('change',e=>{state.ledger=Number(e.target.value);renderLedger();});
-  $('#ledger-source').addEventListener('click',()=>openDialog(`<h2>Millington’s contributions</h2><p>FY2015–FY2026 includes maintenance of effort, municipal schools settlement (OPEB), capital funds and the FY2015 startup contribution. Mixed drink tax and miscellaneous items are excluded.</p>${sourceHtml('mill-history-final')}<p>Totals are recalculated from annual entries. The printed total row in the supplied schedule does not reconcile with those entries. Capital financing is included as reported; the source states that repayment responsibility is assigned to the schools or the City depending on the project. These figures are not a measure of the City’s net debt burden.</p><p>FY2027 remains a separate operating-and-capital budget subtotal from the adopted budget, outside the historical schedule. Do not add City contributions to district spending, which already reflects use of district resources.</p>${sourceHtml('mill-city')}`));
+  $('#ledger-source').addEventListener('click',()=>openDialog(`<h2>Millington’s contributions</h2><p>Updated October 22, 2026. The FY2015–FY2026 total includes maintenance of effort, settlement/OPEB, capital, startup, mixed-drink tax and listed miscellaneous support. The separate subtotal excludes tax and miscellaneous items. Broad support includes services, in-kind items and opportunity-cost valuations, so it is not a cash-transfer total.</p>${sourceHtml(data.cityHistoryReconciliation.source)}<h3>Reconciliation notes</h3>${data.cityHistoryReconciliation.notes.map(note=>`<p>${esc(note)}</p>`).join('')}<p>Blank component cells mean no amount listed, not confirmation that no payment occurred. Capital financing is included as reported. The source assigns repayment responsibility to the schools or the City depending on the project. These figures are not a measure of the City’s net debt burden.</p>${sourceHtml('mill-history-final')}<p>FY2027 remains a separate operating-and-capital budget subtotal from the adopted budget, outside this workbook. Do not add City contributions to district spending, which already reflects use of district resources.</p>${sourceHtml('mill-city')}`));
   $('#all-sources').addEventListener('click',showSourceRegister);
   $('#trend-start').addEventListener('change',e=>{state.start=Number(e.target.value);if(state.end<state.start)state.end=state.start;render();});
   $('#trend-end').addEventListener('change',e=>{state.end=Number(e.target.value);if(state.start>state.end)state.start=state.end;render();});
