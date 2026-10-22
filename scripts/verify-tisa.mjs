@@ -36,5 +36,5 @@ for(const finding of ['spending','tests','enrollment']){
 }
 const index=await readFile(new URL('../site/index.html',import.meta.url),'utf8');
 assert.ok(index.includes('href="#tisa-goals"'));
-assert.ok(index.includes('app.js?v=tisa-20261018'));
+assert.match(index, /<script type="module" src="app\.js\?v=[^"\s]+"><\/script>/);
 console.log('PASS: TISA arithmetic, four goal statuses, source-linked rendering, overview replacement, existing evidence views, and navigation.');

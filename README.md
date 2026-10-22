@@ -35,6 +35,12 @@ Only `site/` is published. Repository documentation and configuration are outsid
 
 Use Node 22 or later. Run `npm run check`. To check Cloudflare configuration without publishing, install dependencies with `npm ci`, then run `npx wrangler deploy --dry-run`.
 
+## October 22 historical funding update
+
+The source workbook is preserved at `site/sources/school-funding-historicals-2026-10-22.xlsx`. The City support section includes all annual categories and expandable miscellaneous detail. The recurring municipal comparison continues to exclude capital, settlement, startup, tax distributions and miscellaneous support.
+
+`python3 scripts/import-city-history.py /absolute/path/to/School_Funding_Historicals.xlsx` reproduces this import for the October 22 workbook layout. It checks annual and miscellaneous sums before saving the data. Review source reconciliation notes in the City records dialog, especially the FY2018 blank settlement entry, the omitted FY2026 capital amount in the worksheet capital total, and the duplicated FY2015 mixed-drink tax in the direct-transfer calculation. The FY2027 budget remains separate. `npm run check` validates the historical totals and those distinctions.
+
 ## References
 
 - [Connect an existing Worker](https://developers.cloudflare.com/workers/ci-cd/builds/#connect-an-existing-worker)
