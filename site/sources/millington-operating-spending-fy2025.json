@@ -1,0 +1,22 @@
+{
+  "title": "Millington FY2025 operating spending per pupil: saved calculation inputs",
+  "kind": "Reviewed extract, not the original state workbook",
+  "reviewedAt": "2026-10-31",
+  "district": "Millington Municipal Schools",
+  "fiscalYear": 2025,
+  "enrollmentDate": "2024-10-01",
+  "numerator": 34939339.27,
+  "denominator": 2461,
+  "value": 14197.2122,
+  "roundedValue": 14197,
+  "scope": "Operating spending from all funding sources, including state, county, municipal and federal resources. Excludes capital and other non-operating categories in the state definition. The denominator is October 1 enrollment, not average daily membership or attendance. City historical support is a separate measure and is not this numerator.",
+  "source": {
+    "publisher": "Tennessee Department of Education",
+    "table": 51,
+    "row": 125,
+    "workbook": "Excel/TABLE 51 24-25.xlsx",
+    "reportUrl": "https://www.tn.gov/education/districts/federal-programs-and-oversight/data/department-reports/2025-annual-statistical-report.html",
+    "archiveUrl": "https://www.tn.gov/content/dam/tn/education/documents/asr/2024-25_ASR_Excel.zip"
+  },
+  "verificationNote": "Inputs match the previously reviewed Explorer dataset. The arithmetic was recomputed October 31, 2026. The official report page and archive link were relocated, but the archive could not be downloaded for a fresh review of the workbook."
+}

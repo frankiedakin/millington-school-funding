@@ -35,7 +35,15 @@ Only `site/` is published. Repository documentation and configuration are outsid
 
 Use Node 22 or later. Run `npm run check`. To check Cloudflare configuration without publishing, install dependencies with `npm ci`, then run `npx wrangler deploy --dry-run`.
 
-## October 22 historical funding update
+## October 31 historical funding update
+
+The current source is the unchanged City PDF received October 31: `site/sources/school-funding-historicals-2026-10-31.pdf`. The ledger includes FY2016 drainage alongside FY2017 and reconciles to $13,315,717 in broad support and $2,642,405 in capital after rounding. The source's direct-transfer footer and blank FY2018 settlement remain explicitly qualified. See [source and calculation notes](SCHOOL-DATA-20261031.md).
+
+The FY2025 per-pupil value is unchanged. A collapsed calculation beside it shows operating expenditures divided by October 1 enrollment, with the official report/archive and a saved extract linked.
+
+To reproduce the current history, run the original importer below, then `python scripts/update-city-history-20261031.py`. The latter validates the exact revised PDF and applies the documented FY2016 addition.
+
+## October 22 historical funding import (retained)
 
 The source workbook is preserved at `site/sources/school-funding-historicals-2026-10-22.xlsx`. The City support section includes all annual categories and expandable miscellaneous detail. The recurring municipal comparison continues to exclude capital, settlement, startup, tax distributions and miscellaneous support.
 
