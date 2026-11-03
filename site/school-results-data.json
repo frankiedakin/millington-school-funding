@@ -1,0 +1,977 @@
+{
+  "reviewedAt": "2026-11-02",
+  "source": "https://tdepublicschools.ondemand.sas.com/va/assessment/district/performance/data/dd7433.csv",
+  "index": "https://tdepublicschools.ondemand.sas.com/va/assessment/district/performance/data/dd7433index.csv",
+  "schema": "https://tdepublicschools.ondemand.sas.com/va/assessment/district/performance/report.xml",
+  "scope": "All Students; standard grades 3–8 and separately labelled EOC courses. State display percentages. Annual cohorts differ.",
+  "millington": [
+    {
+      "subject": "ELA - All Grades",
+      "year": "2021",
+      "display": "16.3%",
+      "state": 28.36,
+      "district": 16.32
+    },
+    {
+      "subject": "ELA - All Grades",
+      "year": "2022",
+      "display": "28.8%",
+      "state": 35.05,
+      "district": 28.76
+    },
+    {
+      "subject": "ELA - All Grades",
+      "year": "2023",
+      "display": "30.3%",
+      "state": 36.6,
+      "district": 30.31
+    },
+    {
+      "subject": "ELA - All Grades",
+      "year": "2024",
+      "display": "32.1%",
+      "state": 37.6,
+      "district": 32.1
+    },
+    {
+      "subject": "ELA - All Grades",
+      "year": "2025",
+      "display": "31.9%",
+      "state": 38.9,
+      "district": 31.9
+    },
+    {
+      "subject": "ELA - All Grades",
+      "year": "2026",
+      "display": "33.9%",
+      "state": 40.6,
+      "district": 33.9
+    },
+    {
+      "subject": "ELA - Grade 3",
+      "year": "2021",
+      "display": "17.1%",
+      "state": 32.08,
+      "district": 17.06
+    },
+    {
+      "subject": "ELA - Grade 3",
+      "year": "2022",
+      "display": "32.3%",
+      "state": 35.67,
+      "district": 32.26
+    },
+    {
+      "subject": "ELA - Grade 3",
+      "year": "2023",
+      "display": "35.0%",
+      "state": 40.47,
+      "district": 34.97
+    },
+    {
+      "subject": "ELA - Grade 3",
+      "year": "2024",
+      "display": "42.2%",
+      "state": 41.0,
+      "district": 42.2
+    },
+    {
+      "subject": "ELA - Grade 3",
+      "year": "2025",
+      "display": "36.7%",
+      "state": 41.7,
+      "district": 36.7
+    },
+    {
+      "subject": "ELA - Grade 3",
+      "year": "2026",
+      "display": "48.3%",
+      "state": 44.9,
+      "district": 48.3
+    },
+    {
+      "subject": "ELA - Grade 4",
+      "year": "2021",
+      "display": "23.4%",
+      "state": 33.28,
+      "district": 23.43
+    },
+    {
+      "subject": "ELA - Grade 4",
+      "year": "2022",
+      "display": "30.4%",
+      "state": 39.31,
+      "district": 30.43
+    },
+    {
+      "subject": "ELA - Grade 4",
+      "year": "2023",
+      "display": "47.0%",
+      "state": 43.52,
+      "district": 46.96
+    },
+    {
+      "subject": "ELA - Grade 4",
+      "year": "2024",
+      "display": "42.0%",
+      "state": 46.4,
+      "district": 42.0
+    },
+    {
+      "subject": "ELA - Grade 4",
+      "year": "2025",
+      "display": "54.1%",
+      "state": 47.7,
+      "district": 54.1
+    },
+    {
+      "subject": "ELA - Grade 4",
+      "year": "2026",
+      "display": "45.3%",
+      "state": 47.4,
+      "district": 45.3
+    },
+    {
+      "subject": "ELA - Grade 5",
+      "year": "2021",
+      "display": "18.9%",
+      "state": 29.02,
+      "district": 18.92
+    },
+    {
+      "subject": "ELA - Grade 5",
+      "year": "2022",
+      "display": "36.1%",
+      "state": 37.72,
+      "district": 36.09
+    },
+    {
+      "subject": "ELA - Grade 5",
+      "year": "2023",
+      "display": "30.1%",
+      "state": 37.03,
+      "district": 30.06
+    },
+    {
+      "subject": "ELA - Grade 5",
+      "year": "2024",
+      "display": "35.2%",
+      "state": 38.6,
+      "district": 35.2
+    },
+    {
+      "subject": "ELA - Grade 5",
+      "year": "2025",
+      "display": "33.1%",
+      "state": 40.7,
+      "district": 33.1
+    },
+    {
+      "subject": "ELA - Grade 5",
+      "year": "2026",
+      "display": "35.2%",
+      "state": 42.7,
+      "district": 35.2
+    },
+    {
+      "subject": "ELA - Grade 6",
+      "year": "2021",
+      "display": "16.3%",
+      "state": 26.35,
+      "district": 16.28
+    },
+    {
+      "subject": "ELA - Grade 6",
+      "year": "2022",
+      "display": "26.3%",
+      "state": 36.34,
+      "district": 26.32
+    },
+    {
+      "subject": "ELA - Grade 6",
+      "year": "2023",
+      "display": "31.7%",
+      "state": 35.93,
+      "district": 31.69
+    },
+    {
+      "subject": "ELA - Grade 6",
+      "year": "2024",
+      "display": "34.4%",
+      "state": 35.6,
+      "district": 34.4
+    },
+    {
+      "subject": "ELA - Grade 6",
+      "year": "2025",
+      "display": "35.9%",
+      "state": 39.5,
+      "district": 35.9
+    },
+    {
+      "subject": "ELA - Grade 6",
+      "year": "2026",
+      "display": "34.9%",
+      "state": 39.8,
+      "district": 34.9
+    },
+    {
+      "subject": "ELA - Grade 7",
+      "year": "2021",
+      "display": "12.2%",
+      "state": 26.77,
+      "district": 12.22
+    },
+    {
+      "subject": "ELA - Grade 7",
+      "year": "2022",
+      "display": "30.6%",
+      "state": 35.72,
+      "district": 30.61
+    },
+    {
+      "subject": "ELA - Grade 7",
+      "year": "2023",
+      "display": "22.9%",
+      "state": 36.06,
+      "district": 22.89
+    },
+    {
+      "subject": "ELA - Grade 7",
+      "year": "2024",
+      "display": "20.3%",
+      "state": 34.5,
+      "district": 20.3
+    },
+    {
+      "subject": "ELA - Grade 7",
+      "year": "2025",
+      "display": "18.8%",
+      "state": 34.3,
+      "district": 18.8
+    },
+    {
+      "subject": "ELA - Grade 7",
+      "year": "2026",
+      "display": "22.1%",
+      "state": 35.9,
+      "district": 22.1
+    },
+    {
+      "subject": "ELA - Grade 8",
+      "year": "2021",
+      "display": "10.7%",
+      "state": 22.97,
+      "district": 10.67
+    },
+    {
+      "subject": "ELA - Grade 8",
+      "year": "2022",
+      "display": "17.2%",
+      "state": 25.83,
+      "district": 17.2
+    },
+    {
+      "subject": "ELA - Grade 8",
+      "year": "2023",
+      "display": "15.8%",
+      "state": 26.34,
+      "district": 15.79
+    },
+    {
+      "subject": "ELA - Grade 8",
+      "year": "2024",
+      "display": "18.0%",
+      "state": 29.2,
+      "district": 18.0
+    },
+    {
+      "subject": "ELA - Grade 8",
+      "year": "2025",
+      "display": "14.9%",
+      "state": 29.6,
+      "district": 14.9
+    },
+    {
+      "subject": "ELA - Grade 8",
+      "year": "2026",
+      "display": "16.2%",
+      "state": 32.3,
+      "district": 16.2
+    },
+    {
+      "subject": "English I - All Grades",
+      "year": "2021",
+      "display": "17.0%",
+      "state": 30.16,
+      "district": 17.04
+    },
+    {
+      "subject": "English I - All Grades",
+      "year": "2022",
+      "display": "22.1%",
+      "state": 34.86,
+      "district": 22.12
+    },
+    {
+      "subject": "English I - All Grades",
+      "year": "2023",
+      "display": "27.0%",
+      "state": 35.4,
+      "district": 26.98
+    },
+    {
+      "subject": "English I - All Grades",
+      "year": "2024",
+      "display": "18.3%",
+      "state": 35.4,
+      "district": 18.3
+    },
+    {
+      "subject": "English I - All Grades",
+      "year": "2025",
+      "display": "23.0%",
+      "state": 39.2,
+      "district": 23.0
+    },
+    {
+      "subject": "English I - All Grades",
+      "year": "2026",
+      "display": "18.3%",
+      "state": 37.3,
+      "district": 18.3
+    },
+    {
+      "subject": "English II - All Grades",
+      "year": "2021",
+      "display": "27.7%",
+      "state": 37.37,
+      "district": 27.71
+    },
+    {
+      "subject": "English II - All Grades",
+      "year": "2022",
+      "display": "41.6%",
+      "state": 45.91,
+      "district": 41.59
+    },
+    {
+      "subject": "English II - All Grades",
+      "year": "2023",
+      "display": "45.2%",
+      "state": 49.37,
+      "district": 45.22
+    },
+    {
+      "subject": "English II - All Grades",
+      "year": "2024",
+      "display": "43.3%",
+      "state": 50.6,
+      "district": 43.3
+    },
+    {
+      "subject": "English II - All Grades",
+      "year": "2025",
+      "display": "46.8%",
+      "state": 54.3,
+      "district": 46.8
+    },
+    {
+      "subject": "English II - All Grades",
+      "year": "2026",
+      "display": "47.5%",
+      "state": 58.1,
+      "district": 47.5
+    },
+    {
+      "subject": "Math - All Grades",
+      "year": "2021",
+      "display": "10.8%",
+      "state": 28.45,
+      "district": 10.82
+    },
+    {
+      "subject": "Math - All Grades",
+      "year": "2022",
+      "display": "22.1%",
+      "state": 34.08,
+      "district": 22.13
+    },
+    {
+      "subject": "Math - All Grades",
+      "year": "2023",
+      "display": "27.3%",
+      "state": 38.14,
+      "district": 27.27
+    },
+    {
+      "subject": "Math - All Grades",
+      "year": "2024",
+      "display": "29.6%",
+      "state": 39.7,
+      "district": 29.6
+    },
+    {
+      "subject": "Math - All Grades",
+      "year": "2025",
+      "display": "33.4%",
+      "state": 42.2,
+      "district": 33.4
+    },
+    {
+      "subject": "Math - All Grades",
+      "year": "2026",
+      "display": "33.2%",
+      "state": 43.0,
+      "district": 33.2
+    },
+    {
+      "subject": "Math - Grade 3",
+      "year": "2021",
+      "display": "11.2%",
+      "state": 31.34,
+      "district": 11.18
+    },
+    {
+      "subject": "Math - Grade 3",
+      "year": "2022",
+      "display": "31.4%",
+      "state": 36.38,
+      "district": 31.38
+    },
+    {
+      "subject": "Math - Grade 3",
+      "year": "2023",
+      "display": "39.3%",
+      "state": 40.48,
+      "district": 39.26
+    },
+    {
+      "subject": "Math - Grade 3",
+      "year": "2024",
+      "display": "36.9%",
+      "state": 41.6,
+      "district": 36.9
+    },
+    {
+      "subject": "Math - Grade 3",
+      "year": "2025",
+      "display": "44.7%",
+      "state": 43.3,
+      "district": 44.7
+    },
+    {
+      "subject": "Math - Grade 3",
+      "year": "2026",
+      "display": "48.0%",
+      "state": 42.6,
+      "district": 48.0
+    },
+    {
+      "subject": "Math - Grade 4",
+      "year": "2021",
+      "display": "15.5%",
+      "state": 33.86,
+      "district": 15.52
+    },
+    {
+      "subject": "Math - Grade 4",
+      "year": "2022",
+      "display": "27.5%",
+      "state": 38.1,
+      "district": 27.5
+    },
+    {
+      "subject": "Math - Grade 4",
+      "year": "2023",
+      "display": "41.4%",
+      "state": 43.57,
+      "district": 41.44
+    },
+    {
+      "subject": "Math - Grade 4",
+      "year": "2024",
+      "display": "34.3%",
+      "state": 43.8,
+      "district": 34.3
+    },
+    {
+      "subject": "Math - Grade 4",
+      "year": "2025",
+      "display": "46.5%",
+      "state": 45.8,
+      "district": 46.5
+    },
+    {
+      "subject": "Math - Grade 4",
+      "year": "2026",
+      "display": "46.9%",
+      "state": 49.4,
+      "district": 46.9
+    },
+    {
+      "subject": "Math - Grade 5",
+      "year": "2021",
+      "display": "13.0%",
+      "state": 31.4,
+      "district": 13.01
+    },
+    {
+      "subject": "Math - Grade 5",
+      "year": "2022",
+      "display": "21.6%",
+      "state": 37.24,
+      "district": 21.56
+    },
+    {
+      "subject": "Math - Grade 5",
+      "year": "2023",
+      "display": "24.7%",
+      "state": 41.29,
+      "district": 24.69
+    },
+    {
+      "subject": "Math - Grade 5",
+      "year": "2024",
+      "display": "35.8%",
+      "state": 44.0,
+      "district": 35.8
+    },
+    {
+      "subject": "Math - Grade 5",
+      "year": "2025",
+      "display": "32.9%",
+      "state": 47.1,
+      "district": 32.9
+    },
+    {
+      "subject": "Math - Grade 5",
+      "year": "2026",
+      "display": "29.3%",
+      "state": 47.4,
+      "district": 29.3
+    },
+    {
+      "subject": "Math - Grade 6",
+      "year": "2021",
+      "display": "8.9%",
+      "state": 26.36,
+      "district": 8.88
+    },
+    {
+      "subject": "Math - Grade 6",
+      "year": "2022",
+      "display": "25.5%",
+      "state": 31.48,
+      "district": 25.49
+    },
+    {
+      "subject": "Math - Grade 6",
+      "year": "2023",
+      "display": "24.0%",
+      "state": 33.82,
+      "district": 24.04
+    },
+    {
+      "subject": "Math - Grade 6",
+      "year": "2024",
+      "display": "22.3%",
+      "state": 35.9,
+      "district": 22.3
+    },
+    {
+      "subject": "Math - Grade 6",
+      "year": "2025",
+      "display": "33.7%",
+      "state": 41.3,
+      "district": 33.7
+    },
+    {
+      "subject": "Math - Grade 6",
+      "year": "2026",
+      "display": "35.6%",
+      "state": 40.1,
+      "district": 35.6
+    },
+    {
+      "subject": "Math - Grade 7",
+      "year": "2021",
+      "display": "10.3%",
+      "state": 22.85,
+      "district": 10.34
+    },
+    {
+      "subject": "Math - Grade 7",
+      "year": "2022",
+      "display": "15.3%",
+      "state": 30.15,
+      "district": 15.31
+    },
+    {
+      "subject": "Math - Grade 7",
+      "year": "2023",
+      "display": "19.3%",
+      "state": 35.03,
+      "district": 19.28
+    },
+    {
+      "subject": "Math - Grade 7",
+      "year": "2024",
+      "display": "20.3%",
+      "state": 38.1,
+      "district": 20.3
+    },
+    {
+      "subject": "Math - Grade 7",
+      "year": "2025",
+      "display": "14.5%",
+      "state": 38.7,
+      "district": 14.5
+    },
+    {
+      "subject": "Math - Grade 7",
+      "year": "2026",
+      "display": "17.9%",
+      "state": 39.2,
+      "district": 17.9
+    },
+    {
+      "subject": "Math - Grade 8",
+      "year": "2021",
+      "display": "5.8%",
+      "state": 24.79,
+      "district": 5.77
+    },
+    {
+      "subject": "Math - Grade 8",
+      "year": "2022",
+      "display": "12.3%",
+      "state": 30.72,
+      "district": 12.28
+    },
+    {
+      "subject": "Math - Grade 8",
+      "year": "2023",
+      "display": "15.8%",
+      "state": 33.95,
+      "district": 15.79
+    },
+    {
+      "subject": "Math - Grade 8",
+      "year": "2024",
+      "display": "28.0%",
+      "state": 33.9,
+      "district": 28.0
+    },
+    {
+      "subject": "Math - Grade 8",
+      "year": "2025",
+      "display": "27.9%",
+      "state": 36.2,
+      "district": 27.9
+    },
+    {
+      "subject": "Math - Grade 8",
+      "year": "2026",
+      "display": "19.5%",
+      "state": 38.3,
+      "district": 19.5
+    },
+    {
+      "subject": "Algebra I - All Grades",
+      "year": "2021",
+      "display": "6.0%",
+      "state": 18.3,
+      "district": 6.0
+    },
+    {
+      "subject": "Algebra I - All Grades",
+      "year": "2022",
+      "display": "12.7%",
+      "state": 20.68,
+      "district": 12.73
+    },
+    {
+      "subject": "Algebra I - All Grades",
+      "year": "2023",
+      "display": "8.9%",
+      "state": 23.15,
+      "district": 8.87
+    },
+    {
+      "subject": "Algebra I - All Grades",
+      "year": "2024",
+      "display": "12.8%",
+      "state": 27.5,
+      "district": 12.8
+    },
+    {
+      "subject": "Algebra I - All Grades",
+      "year": "2025",
+      "display": "17.0%",
+      "state": 29.4,
+      "district": 17.0
+    },
+    {
+      "subject": "Algebra I - All Grades",
+      "year": "2026",
+      "display": "23.1%",
+      "state": 32.3,
+      "district": 23.1
+    },
+    {
+      "subject": "Algebra II - All Grades",
+      "year": "2021",
+      "display": "2.0%",
+      "state": 18.98,
+      "district": 2.04
+    },
+    {
+      "subject": "Algebra II - All Grades",
+      "year": "2022",
+      "display": "12.1%",
+      "state": 25.56,
+      "district": 12.07
+    },
+    {
+      "subject": "Algebra II - All Grades",
+      "year": "2023",
+      "display": "8.9%",
+      "state": 25.61,
+      "district": 8.91
+    },
+    {
+      "subject": "Algebra II - All Grades",
+      "year": "2024",
+      "display": "13.7%",
+      "state": 31.6,
+      "district": 13.7
+    },
+    {
+      "subject": "Algebra II - All Grades",
+      "year": "2025",
+      "display": "15.9%",
+      "state": 34.6,
+      "district": 15.9
+    },
+    {
+      "subject": "Algebra II - All Grades",
+      "year": "2026",
+      "display": "19.1%",
+      "state": 37.3,
+      "district": 19.1
+    },
+    {
+      "subject": "Geometry - All Grades",
+      "year": "2021",
+      "display": "9.3%",
+      "state": 23.86,
+      "district": 9.34
+    },
+    {
+      "subject": "Geometry - All Grades",
+      "year": "2022",
+      "display": "15.8%",
+      "state": 26.24,
+      "district": 15.81
+    },
+    {
+      "subject": "Geometry - All Grades",
+      "year": "2023",
+      "display": "14.5%",
+      "state": 28.57,
+      "district": 14.48
+    },
+    {
+      "subject": "Geometry - All Grades",
+      "year": "2024",
+      "display": "17.6%",
+      "state": 35.4,
+      "district": 17.6
+    },
+    {
+      "subject": "Geometry - All Grades",
+      "year": "2025",
+      "display": "23.8%",
+      "state": 36.8,
+      "district": 23.8
+    },
+    {
+      "subject": "Geometry - All Grades",
+      "year": "2026",
+      "display": "34.4%",
+      "state": 42.3,
+      "district": 34.4
+    }
+  ],
+  "municipalPeers": [
+    {
+      "district_code": "00793",
+      "district": "Arlington",
+      "subject": "ELA - All Grades",
+      "year": "2021",
+      "proficient_pct": 56.9
+    },
+    {
+      "district_code": "00793",
+      "district": "Arlington",
+      "subject": "ELA - All Grades",
+      "year": "2026",
+      "proficient_pct": 67.1
+    },
+    {
+      "district_code": "00793",
+      "district": "Arlington",
+      "subject": "Math - All Grades",
+      "year": "2021",
+      "proficient_pct": 68.0
+    },
+    {
+      "district_code": "00793",
+      "district": "Arlington",
+      "subject": "Math - All Grades",
+      "year": "2026",
+      "proficient_pct": 72.7
+    },
+    {
+      "district_code": "00794",
+      "district": "Bartlett",
+      "subject": "ELA - All Grades",
+      "year": "2021",
+      "proficient_pct": 36.0
+    },
+    {
+      "district_code": "00794",
+      "district": "Bartlett",
+      "subject": "ELA - All Grades",
+      "year": "2026",
+      "proficient_pct": 47.7
+    },
+    {
+      "district_code": "00794",
+      "district": "Bartlett",
+      "subject": "Math - All Grades",
+      "year": "2021",
+      "proficient_pct": 39.7
+    },
+    {
+      "district_code": "00794",
+      "district": "Bartlett",
+      "subject": "Math - All Grades",
+      "year": "2026",
+      "proficient_pct": 56.6
+    },
+    {
+      "district_code": "00795",
+      "district": "Collierville",
+      "subject": "ELA - All Grades",
+      "year": "2021",
+      "proficient_pct": 53.7
+    },
+    {
+      "district_code": "00795",
+      "district": "Collierville",
+      "subject": "ELA - All Grades",
+      "year": "2026",
+      "proficient_pct": 70.8
+    },
+    {
+      "district_code": "00795",
+      "district": "Collierville",
+      "subject": "Math - All Grades",
+      "year": "2021",
+      "proficient_pct": 54.3
+    },
+    {
+      "district_code": "00795",
+      "district": "Collierville",
+      "subject": "Math - All Grades",
+      "year": "2026",
+      "proficient_pct": 74.6
+    },
+    {
+      "district_code": "00796",
+      "district": "Germantown",
+      "subject": "ELA - All Grades",
+      "year": "2021",
+      "proficient_pct": 58.0
+    },
+    {
+      "district_code": "00796",
+      "district": "Germantown",
+      "subject": "ELA - All Grades",
+      "year": "2026",
+      "proficient_pct": 70.4
+    },
+    {
+      "district_code": "00796",
+      "district": "Germantown",
+      "subject": "Math - All Grades",
+      "year": "2021",
+      "proficient_pct": 55.6
+    },
+    {
+      "district_code": "00796",
+      "district": "Germantown",
+      "subject": "Math - All Grades",
+      "year": "2026",
+      "proficient_pct": 75.8
+    },
+    {
+      "district_code": "00797",
+      "district": "Lakeland",
+      "subject": "ELA - All Grades",
+      "year": "2021",
+      "proficient_pct": 53.0
+    },
+    {
+      "district_code": "00797",
+      "district": "Lakeland",
+      "subject": "ELA - All Grades",
+      "year": "2026",
+      "proficient_pct": 63.8
+    },
+    {
+      "district_code": "00797",
+      "district": "Lakeland",
+      "subject": "Math - All Grades",
+      "year": "2021",
+      "proficient_pct": 59.3
+    },
+    {
+      "district_code": "00797",
+      "district": "Lakeland",
+      "subject": "Math - All Grades",
+      "year": "2026",
+      "proficient_pct": 62.5
+    },
+    {
+      "district_code": "00798",
+      "district": "Millington",
+      "subject": "ELA - All Grades",
+      "year": "2021",
+      "proficient_pct": 16.3
+    },
+    {
+      "district_code": "00798",
+      "district": "Millington",
+      "subject": "ELA - All Grades",
+      "year": "2026",
+      "proficient_pct": 33.9
+    },
+    {
+      "district_code": "00798",
+      "district": "Millington",
+      "subject": "Math - All Grades",
+      "year": "2021",
+      "proficient_pct": 10.8
+    },
+    {
+      "district_code": "00798",
+      "district": "Millington",
+      "subject": "Math - All Grades",
+      "year": "2026",
+      "proficient_pct": 33.2
+    }
+  ]
+}

@@ -1,0 +1,33 @@
+/* Compact, closed-by-default disclosures. Native details supports touch and keyboard. */
+.district-context{margin:.45rem 0 .9rem;border:0;padding:0;font-size:.9rem;line-height:1.55;color:inherit}
+.district-context>summary{cursor:pointer;width:fit-content;max-width:100%;padding:.35rem .15rem;font:inherit;font-weight:600;text-decoration:underline;text-underline-offset:3px;color:inherit}
+.district-context[open]>summary{margin-bottom:.65rem}
+.district-context-body{padding:1rem;border:1px solid var(--line,#d8d2c7);border-radius:3px;background:var(--white,#fffdf8);color:var(--navy,#172737);overflow-wrap:anywhere}
+.district-context-body .context-label{font:600 .7rem/1.5 system-ui,sans-serif;letter-spacing:.06em;text-transform:uppercase;margin:0 0 .45rem;color:inherit}
+.district-context-body blockquote{margin:0 0 1rem;padding:0 0 0 .85rem;border-left:3px solid var(--gold,#aa8552)}
+.district-context-body p{font:inherit;margin:0 0 .7rem;color:inherit}
+.context-editor-note{padding-top:.85rem;border-top:1px solid var(--line,#d8d2c7)}
+.context-sources,.district-context-body .context-attribution{font-size:.78rem;line-height:1.6}
+.district-context-body .context-attribution{margin:.65rem 0 0}
+.district-context a{color:inherit;text-decoration:underline}
+.district-context summary:focus-visible,.district-context a:focus-visible{outline:3px solid var(--gold,#aa8552);outline-offset:3px}
+.context-document{max-width:960px;margin:auto;padding:32px 22px 70px}
+.context-document h1{font-size:clamp(32px,5vw,48px);margin-top:24px}
+.context-document h2{font-size:28px;margin-top:28px}
+.context-document h3{font-size:23px}
+.context-document .document-intro{max-width:72ch}
+.context-document .district-context{margin:18px 0}
+.context-document .document-disclosure{margin:20px 0;padding:14px;border:1px solid var(--line,#d8d2c7)}
+.context-document summary{cursor:pointer}
+.context-document [id]{scroll-margin-top:20px}
+.context-document .results-wrap{overflow:auto;max-width:100%;margin:16px 0 25px}
+.context-document table{width:100%;border-collapse:collapse;font:14px/1.5 system-ui,sans-serif;white-space:nowrap}
+.context-document caption{text-align:left;font-weight:600;padding:8px 0}
+.context-document th,.context-document td{padding:10px;text-align:right;border-bottom:1px solid var(--line,#d8d2c7)}
+.context-document th:first-child{text-align:left}
+.context-document thead{background:var(--navy,#172737);color:#fffdf8}
+.context-document .method-note{font-size:.88rem}
+.context-document footer{display:block;background:none;color:inherit;margin-top:32px;padding:16px 0;border-top:1px solid var(--line,#d8d2c7)}
+.context-document .source-notes li{margin-bottom:15px}
+
+.district-context .sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}

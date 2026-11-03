@@ -1,3 +1,4 @@
+import { metricContext, districtContextDetails } from './district-context.js';
 import { summarizeComparison } from './comparison-summary.js';
 import { setupOverview } from './overview.js?v=school-data-20261031';
 const $ = s => document.querySelector(s);
@@ -99,6 +100,7 @@ function render(){
  $('#trend-start').value=state.start;$('#trend-end').value=state.end;
  $('#year-label').textContent=`${yearText(state.baseline)} compared with ${yearText(state.year)}`;
  $('#metric-title').textContent=m.title;$('#definition').textContent=m.description;
+ $('#metric-context').innerHTML=metricContext(state.metric);
  $('#history-note').hidden=!(state.year<=2015||state.baseline<=2015);
  document.querySelectorAll('[data-district]').forEach(b=>b.setAttribute('aria-pressed',selected.has(b.dataset.district)));
  $('#selected-count').textContent=`${selected.size-1} selected`;
@@ -203,6 +205,7 @@ function showEvidence(d,y,k=state.metric){
  if(a.components?.length)formula+=`<details open class="component-details"><summary>Source cells included in this figure</summary><div class="evidence-table-wrap"><table class="evidence-table"><thead><tr><th>Function and category</th><th>Cell</th><th>Amount</th></tr></thead><tbody>${a.components.map(c=>`<tr><td>${esc(c.function)} · ${esc(c.column)}</td><td>${esc(c.cell)}</td><td>$${fmt(c.value,2)}</td></tr>`).join('')}</tbody></table></div><p>Primary workbooks are linked below. ${a.numerator!==undefined?'These components form the numerator before dividing by enrollment.':'The included salary or spending cells sum to the displayed total.'}</p></details>`;
  if(a.numerator!==undefined)formula+=`<div class="formula"><strong>Calculation</strong><br>${display(a.numerator,k,true)} ÷ ${fmt(a.denominator)}${k==='salary200'?' × 200':''} = ${display(a.value,k,true)}</div>`;
  if(k==='operating_pp'&&numeric(a))formula+=`<p>Operating spending from all funding sources, including state, county, municipal and federal resources, divided by October 1 enrollment. Capital and other non-operating categories are excluded under the applicable state definition. This is separate from the City support history below.</p>${d==='798'&&y===2025?sourceHtml('asr2025-51-extract'):''}`;
+ if(d==='798'&&k==='operating_pp'&&y===2025)formula+=districtContextDetails('funding','figure');
  if(a.reserves!==undefined)formula+=`<div class="formula">Separately reported general-purpose reserves: <strong>$${fmt(a.reserves,2)}</strong>. These are excluded from this displayed fund-balance column. No claim about spendable or recurring resources is made.</div>`;
  openDialog(`<h2>${esc(districtName(district,y))}</h2><p>${yearText(y)} · ${esc(m.title)}</p><div class="big-value">${display(a.value,k,true)}</div>${badge(a)} ${a.basis?`<span class="badge estimate">${esc(a.basis)}</span>`:''}<p>${esc(a.note)}</p>${formula}${(a.sources||[]).map(sourceHtml).join('')}${!a.sources?.length?'<p>No primary source has been incorporated for this observation. This gap is intentional.</p>':''}`);
 }
