@@ -1,3 +1,4 @@
+import { districtContextDetails } from './district-context.js';
 // Targets: MMSD FY2026 TISA report, pp. 2, 4, 6, 8.
 // Outcomes: MMSD FY2027 revised TISA report, pp. 2, 5, 7, 9.
 // These are district-reported figures, not the site's separate grades 3–8 series.
@@ -26,6 +27,7 @@ export function tisaSection() {
     <div class="tisa-heading"><p class="eyebrow">TISA GOALS & RESULTS · 2025–26</p><span class="tisa-date">District report revised October 6, 2026</span></div>
     <h2 id="tisa-title">ELA missed its annual target and moved backward.</h2>
     <p class="tisa-lead">For grades 4–8 and English I & II, proficiency fell from <strong>32.49% to 31.36%</strong>. The district's published target was <strong>37%</strong>. That shortfall deserves clear answers about what will change.</p>
+    ${districtContextDetails('academic','tisa')}
     <dl class="tisa-scorecard">
       <div><dt>2025–26 result</dt><dd>31.36<span>%</span></dd></div>
       <div><dt>2025–26 target</dt><dd>37<span>%</span></dd></div>
@@ -41,7 +43,7 @@ export function tisaSection() {
       </tbody></table>
     </div>
     <div class="tisa-notes"><p><strong>Third-grade reading:</strong> 48.3% exceeded the 44.2% annual target by 4.1 percentage points. The separate 70% goal is due in 2032, not 2026.</p><p><strong>Ready Graduates:</strong> 73.7% is the 2024–25 result. It is not a 2025–26 result and cannot establish whether the latest annual target was met.</p></div>
-    <details class="tisa-details"><summary>District response, next milestones and source notes</summary>
+    <details class="tisa-details"><summary>District’s TISA action plan, next milestones and source notes</summary>
       <p>The district says it will retain its overall ELA action plan while increasing instructional monitoring, collaboration and targeted support. It identifies grade 4, grade 6 and English I as areas without growth in 2025–26. ${docLink('current',5,'Read the district’s full response ↗')}</p>
       <p>The prior report lists ELA milestones of 39% for 2026–27 and 41% for 2027–28. The accountability question is what measurable changes will close the gap, and how progress will be reported. ${docLink('prior',4,'Read the published milestones ↗')}</p>
       <p><strong>Different measures:</strong> This TISA ELA measure combines grades 4–8 with English I and II. TISA math combines grades 3–8 with Algebra I, Algebra II and Geometry. Neither is interchangeable with the separate grades 3–8 comparison tool below.</p>
